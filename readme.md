@@ -34,5 +34,5 @@ portfolio-website/
 
 ```bash
 git clone https://github.com/inshaal1/portfolio-website.git
-
+```
 2. Open index.html in a web browser to view the website.
