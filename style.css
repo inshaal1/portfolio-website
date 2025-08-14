@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #545353;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #424242;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navlinks li a:hover,
+.navlinks li a.active {
+    background-color: white;
+    color: black;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+#about-me {
+    display: flex;
+    margin-top: 80px;
+    gap: 40px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+img {
+    border-radius: 100px;
+    border: 5px solid white;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#projects {
+    position: relative;
+    padding: 15px 20px 30px;
+    background-color: white;
+    color: #545353;
+}
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 0 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+#contact {
+    background-color: #545353;
+    color: #545353;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #545353;
+}
+
+#contact form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#contact .cm,
+#contact label {
+    color: #545353;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #545353;
+    outline: none;
+}
+
+#submit {
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #545353;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode nav,
+.light-mode footer {
+    background-color: #f0f0f0;
+}
+
+.light-mode nav .logo,
+.light-mode nav .navlinks li a,
+.light-mode footer,
+.light-mode footer a {
+    color: #000000;
+}
+
+.light-mode #about-me,
+.light-mode #projects,
+.light-mode #contact,
+.light-mode .project-card,
+.light-mode #contact .cm,
+.light-mode #contact label {
+    color: #000000;
+}
+
+.light-mode #projects {
+    background-color: #f9f9f9;
+}
+
+.light-mode .project-card {
+    background-color: #e0e0e0;
+}
+
+.light-mode #contact {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+}
+
+.light-mode #contact form {
+    background-color: #ffffff;
+}
+
+.light-mode #contact input,
+.light-mode #contact textarea {
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.light-mode #submit {
+    background-color: #000000;
+    color: #ffffff !important;
+}
+
+.light-mode #submit:hover {
+    background-color: #ffffff;
+    color: #000000 !important;
+}
